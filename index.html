@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día del Niño</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #000000; /* Fondo negro */
+            color: #ffffff; /* Texto en blanco por defecto */
+            padding: 20px;
+        }
+        h1 {
+            color: #00a9fe; /* Rojo brillante */
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px #01598f; /* Amarillo para resaltar */
+        }
+        p {
+            font-size: 1.2em;
+            color: #ff70d9;
+        }
+        .foto {
+            margin: 20px 0;
+        }
+        .foto img {
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(255,255,255,0.2);
+            border: 3px solid #ffcc00; /* Amarillo */
+        }
+        .frase {
+            font-style: italic;
+            font-size: 1.3em;
+            color: #ffcc00; /* Amarillo */
+            margin: 20px 0;
+        }
+        /* Caja y flor animada */
+        .caja {
+            position: relative;
+            margin: 50px auto;
+            width: 120px;
+            height: 80px;
+            background: #000000; /* Rojo */
+            border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden;
+            box-shadow: 0px 5px 15px rgb(1, 89, 143);
+        }
+        .flor {
+            position: absolute;
+            bottom: -150px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 60px;
+            transition: bottom 2s ease;
+        }
+        .caja.abierta .flor {
+            bottom: 60px;
+        }
+        /* Cuadro motivacional */
+        .motivacion {
+            margin-top: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #ff4444, #ffcc00, #1abc9c); 
+            color: #000;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>✨ ¡Feliz Día mi vida! ✨</h1>
+    <p>Mi niñita te quiero desear un feliz día, que la pases muy bien, que siempre tengas una vida exitosa a pesar de que a vecess se vuelve algo complicado, todo siempre siga hacia adelante, no solo quiero recordarte que eres una niña grandiosa, tambien quiero recordarte que AMO la persona que eres, lo especial, valiente, hermosa. Siempre buscas la forma y acomodas el camino para que te vauya de la mejor manera, que Diosito siempre te bendiga, te proteja, te cuide y te de lo mejor a ti, porque mereces mucho. Yo te amodoro mucho mi niñita!! </p>
+    
+    <div class="foto">
+        <img src="KEICHITA.jpg" alt="Foto de niña">
+    </div>
+    
+    <div class="frase">
+        🌸 ¡¡¡¡Que tu niña interior nunca deje de sonreír!!!! 🌸
+    </div>
+
+    <div class="caja" onclick="abrirCaja()">
+        <div class="flor">🌹</div>
+    </div>
+
+    <p>Haz clic en la cajita para ver lo que contiene</p>
+
+    <!-- Cuadro motivacional -->
+    <div class="motivacion">
+        🌟 Recuerda siempre tu escencia, lo que realmente eres. Confia en ti, nada puede detenerte cuando crees en ti. 🌟
+    </div>
+
+    <script>
+        function abrirCaja() {
+            document.querySelector('.caja').classList.toggle('abierta');
+        }
+    </script>
+</body>
+</html>
